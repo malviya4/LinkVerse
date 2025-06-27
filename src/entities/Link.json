@@ -1,0 +1,81 @@
+{
+  "name": "Link",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "The URL of the saved link"
+    },
+    "title": {
+      "type": "string",
+      "description": "Page title or custom title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description or excerpt from the page"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "social_media",
+        "video",
+        "development",
+        "news",
+        "shopping",
+        "education",
+        "productivity",
+        "design",
+        "business",
+        "entertainment",
+        "research",
+        "documentation",
+        "portfolio",
+        "blog",
+        "other"
+      ],
+      "default": "other",
+      "description": "Auto-categorized or manually set category"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Custom tags for organization"
+    },
+    "favicon": {
+      "type": "string",
+      "description": "URL to the site's favicon"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this link is marked as favorite"
+    },
+    "collection": {
+      "type": "string",
+      "description": "Collection/folder name"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal notes about the link"
+    },
+    "last_accessed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the link was last clicked"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Domain extracted from URL"
+    },
+    "screenshot": {
+      "type": "string",
+      "description": "Optional screenshot URL"
+    }
+  },
+  "required": [
+    "url",
+    "title"
+  ]
+}
