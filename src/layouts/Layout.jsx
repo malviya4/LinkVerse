@@ -29,8 +29,8 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 
-import PWAInstallPrompt from "./components/PWAInstallPrompt";
-import PWAHandler from "./components/PWAHandler";
+import PWAInstallPrompt from "../components/PWAInstallPrompt";
+import PWAHandler from "../components/PWAHandler";
 
 // Cache for data to avoid repeated API calls
 const dataCache = {
